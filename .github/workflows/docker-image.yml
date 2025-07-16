@@ -36,8 +36,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/luowei729/libretv:latest
+            ghcr.io/luowei729/libretv:${{ github.sha }}
           build-args: |
             BUILD_DATE=${{ github.event.head_commit.timestamp }}
             VERSION=${{ github.run_number }}
